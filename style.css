@@ -1,0 +1,94 @@
+  *, *::before, *::after {
+  box-sizing: border-box;
+  font-family: inherit;
+  color: inherit;
+  margin: 0;
+}
+
+html {
+  /* Primary colors */
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+
+  /* Neutral colors */
+  --very-pale-blue: hsl(228, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+
+  font-family: 'Red Hat Display', sans-serif;
+  color: var(--desaturated-blue);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1, h2 {
+  color: var(--dark-blue);
+}
+
+h1 {
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+a {
+  font-weight: 700;
+  color: var(--bright-blue);
+  font-size: .85rem;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.card {
+  text-align: center;
+}
+
+.card > .content {
+  margin: 1.25em;
+}
+
+.card > .content > * + * {
+  margin-top: 1.5em;
+}
+
+.price {
+  background-color: var(--very-pale-blue);
+  border-radius: .8em;
+  padding: 1.25em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price > * + * {
+  margin-left: 1.25em;
+}
+
+.price > .content {
+  margin-right: auto;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+  font-weight: 900;
+  font-size: .9rem;
+}
+
+button.primary {
+  background-color: var(--bright-blue);
+  color: var(--very-pale-blue);
+  border-radius: .8em;
+  padding: 1em;
+  width: 100%;
+  box-shadow: 0 1em 1em var(--desaturated-blue);
+}
