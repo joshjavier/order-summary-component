@@ -20,6 +20,13 @@ html {
   -webkit-text-size-adjust: 100%; /* Prevent weird font scaling in iPhone/iPad landscape mode */
 }
 
+body {
+  background-color: var(--pale-blue);
+  background-image: url("images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -145,5 +152,11 @@ button.primary:active {
   
   .card > .content {
     padding: 10% clamp(1.25em, 8vw, 2.8em);
+  }
+}
+
+@media (min-width: 900px) {
+  body {
+    background-image: url("images/pattern-background-desktop.svg");
   }
 }
