@@ -1,4 +1,4 @@
-  *, *::before, *::after {
+*, *::before, *::after {
   box-sizing: border-box;
   font-family: inherit;
   color: inherit;
@@ -17,6 +17,7 @@ html {
 
   font-family: 'Red Hat Display', sans-serif;
   color: var(--desaturated-blue);
+  -webkit-text-size-adjust: 100%; /* Prevent weird font scaling in iPhone/iPad landscape mode */
 }
 
 img {
@@ -37,7 +38,6 @@ h2 {
 a {
   font-weight: 700;
   color: var(--bright-blue);
-  font-size: .85rem;
 }
 
 a:hover,
@@ -85,6 +85,10 @@ p {
 
 .price > .content {
   margin-right: auto;
+}
+
+.price a {
+  font-size: .85rem;
 }
 
 button {
