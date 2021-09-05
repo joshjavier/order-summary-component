@@ -42,6 +42,12 @@ a {
   font-size: .85rem;
 }
 
+a:hover,
+a:active {
+  text-decoration: none;
+  color: hsl(245, 83%, 68%);
+}
+
 p {
   line-height: 1.6;
 }
@@ -91,4 +97,14 @@ button.primary {
   padding: 1em;
   width: 100%;
   box-shadow: 0 1em 1em var(--desaturated-blue);
+}
+
+button:not(.primary):hover,
+button:not(.primary):active {
+  color: var(--dark-blue);
+}
+
+button.primary:hover,
+button.primary:active {
+  background-color: hsl(245, 83%, 68%);
 }
