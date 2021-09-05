@@ -52,10 +52,12 @@ p {
 
 .card {
   text-align: center;
+  max-width: 28em;
+  background-color: #FFFFFF;
 }
 
 .card > .content {
-  margin: 10% 1.25em;
+  padding: 10% 1.25em;
 }
 
 .card > .content > * + * {
@@ -111,4 +113,27 @@ button:not(.primary):active {
 button.primary:hover,
 button.primary:active {
   background-color: hsl(245, 83%, 68%);
+}
+
+@media (min-width: 375px) {
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5vw;
+  }
+
+  .card {
+    border-radius: 1em;
+    box-shadow: 0 1em 1.5em hsla(224, 23%, 55%, 0.25);
+  }
+  
+  header img {
+    border-radius: 1em 1em 0 0;
+  }
+  
+  .card > .content {
+    padding: 10% clamp(1.25em, 8vw, 2.8em);
+  }
 }
