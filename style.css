@@ -26,14 +26,12 @@ img {
 
 h1, h2 {
   color: var(--dark-blue);
-}
-
-h1 {
   font-weight: 900;
+  line-height: 1.2;
 }
 
 h2 {
-  font-size: 1rem;
+  font-size: .95rem;
 }
 
 a {
@@ -57,11 +55,16 @@ p {
 }
 
 .card > .content {
-  margin: 1.25em;
+  margin: 10% 1.25em;
 }
 
 .card > .content > * + * {
   margin-top: 1.5em;
+}
+
+.card > .content > p {
+  max-width: 90%;
+  margin: 1em auto;
 }
 
 .price {
@@ -71,6 +74,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: left;
 }
 
 .price > * + * {
@@ -96,7 +100,7 @@ button.primary {
   border-radius: .8em;
   padding: 1em;
   width: 100%;
-  box-shadow: 0 1em 1em var(--desaturated-blue);
+  box-shadow: 0 1em 1.5em hsla(224, 23%, 55%, 0.4);
 }
 
 button:not(.primary):hover,
