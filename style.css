@@ -38,8 +38,12 @@ h1, h2 {
   line-height: 1.2;
 }
 
+h1 {
+  font-size: 1.74rem;
+}
+
 h2 {
-  font-size: .95rem;
+  font-size: .97rem;
 }
 
 a {
@@ -64,22 +68,22 @@ p {
 }
 
 .card > .content {
-  padding: 10% 1.25em;
+  padding: 10.6% 1.25em;
 }
 
 .card > .content > * + * {
-  margin-top: 1.5em;
+  margin-top: 2em;
 }
 
 .card > .content > p {
   max-width: 90%;
-  margin: 1em auto;
+  margin: 1.25em auto;
 }
 
 .price {
   background-color: var(--very-pale-blue);
   border-radius: .8em;
-  padding: 1.25em;
+  padding: 1.5em;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -113,7 +117,7 @@ button.primary {
   border-radius: .8em;
   padding: 1em;
   width: 100%;
-  box-shadow: 0 1em 1.5em hsla(224, 23%, 55%, 0.4);
+  box-shadow: 0 1.5em 1.5em hsl(245, 75%, 52%, .2);
 }
 
 button:not(.primary):hover,
@@ -138,20 +142,20 @@ button.primary:active {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 5vw;
+    padding: 7.1vw;
   }
 
   .card {
-    border-radius: 1em;
-    box-shadow: 0 1em 1.5em hsla(224, 23%, 55%, 0.25);
+    border-radius: 1.25em;
+    box-shadow: 0 2em 2em -.75em hsla(224, 23%, 55%, 0.2);
   }
   
   header img {
-    border-radius: 1em 1em 0 0;
+    border-radius: 1.25em 1.25em 0 0;
   }
   
   .card > .content {
-    padding: 10% clamp(1.25em, 8vw, 2.8em);
+    padding: 10.6% clamp(1.25em, 7.1vw, 3em);
   }
 }
 
