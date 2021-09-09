@@ -3,6 +3,7 @@
   font-family: inherit;
   color: inherit;
   margin: 0;
+  padding: 0;
 }
 
 html {
@@ -98,20 +99,34 @@ p {
   margin-right: auto;
 }
 
-.price a {
+.price button {
   font-size: .85rem;
 }
 
 button {
   border: none;
   background-color: transparent;
-  padding: 0;
   cursor: pointer;
-  font-weight: 900;
-  font-size: .9rem;
+  font-weight: 700;
+  color: var(--bright-blue);
+  text-decoration: underline;
 }
 
-button.primary {
+button:active,
+button:hover {
+  text-decoration: none;
+  color: hsl(245, 83%, 68%);
+}
+
+.button {
+  text-decoration: none;
+  color: var(--desaturated-blue);
+  display: inline-block;
+  font-size: .9rem;
+  font-weight: 900;
+}
+
+.primary.button {
   background-color: var(--bright-blue);
   color: var(--very-pale-blue);
   border-radius: .8em;
@@ -120,13 +135,13 @@ button.primary {
   box-shadow: 0 1.5em 1.5em hsl(245, 75%, 52%, .2);
 }
 
-button:not(.primary):hover,
-button:not(.primary):active {
+.button:not(.primary):hover,
+.button:not(.primary):active {
   color: var(--dark-blue);
 }
 
-button.primary:hover,
-button.primary:active {
+.primary.button:hover,
+.primary.button:active {
   background-color: hsl(245, 83%, 68%);
 }
 
