@@ -26,6 +26,13 @@ body {
   background-image: url("images/pattern-background-mobile.svg");
   background-repeat: no-repeat;
   background-size: contain;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6vw;
 }
 
 img {
@@ -40,7 +47,7 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 1.74rem;
+  font-size: 1.5rem;
 }
 
 h2 {
@@ -70,25 +77,37 @@ p {
   text-align: center;
   max-width: 28em;
   background-color: #FFFFFF;
+  border-radius: 1.25em;
+  box-shadow: 0 2em 2em -.75em hsla(224, 23%, 55%, 0.2);
 }
 
-.card > .content {
-  padding: 10.6% 1.25em;
+header img {
+  border-radius: 1.25em 1.25em 0 0;
 }
 
-.card > .content > * + * {
+.card .container {
+  padding: 2.5rem 1.4rem;
+}
+
+.card__content {
+  max-width: 22em;
+  margin: 0 auto;
+}
+
+.card__content > * + * {
   margin-top: 2em;
 }
 
-.card > .content > p {
-  max-width: 90%;
+.card__content > p {
+  max-width: 92%;
   margin: 1.25em auto;
 }
 
 .price {
   background-color: var(--very-pale-blue);
   border-radius: .8em;
-  padding: 1.5em;
+  padding: 1.1em 1em;
+  padding: clamp(1em, 4vw, 1.5em);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -99,7 +118,7 @@ p {
   margin-left: 1.25em;
 }
 
-.price > .content {
+.price__content {
   margin-right: auto;
 }
 
@@ -152,30 +171,6 @@ button:hover {
 .attribution {
   margin: 2em auto;
   width: 80%;
-}
-
-@media (min-width: 375px) {
-  body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 7.1vw;
-  }
-
-  .card {
-    border-radius: 1.25em;
-    box-shadow: 0 2em 2em -.75em hsla(224, 23%, 55%, 0.2);
-  }
-  
-  header img {
-    border-radius: 1.25em 1.25em 0 0;
-  }
-  
-  .card > .content {
-    padding: 10.6% clamp(1.25em, 7.1vw, 3em);
-  }
 }
 
 @media (min-width: 900px) {
