@@ -58,6 +58,10 @@ a:active {
   color: hsl(245, 83%, 68%);
 }
 
+:focus-visible {
+  outline: 4px solid orange;
+}
+
 p {
   line-height: 1.6;
 }
